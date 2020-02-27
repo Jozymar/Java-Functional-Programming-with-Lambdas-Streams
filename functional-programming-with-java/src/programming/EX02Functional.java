@@ -37,7 +37,7 @@ public class EX02Functional {
 	}
 
 	private static int addListFunctional(List<Integer> numbers) {
-		return numbers.stream()
+		return numbers.stream().parallel()
 //				.reduce(0, EX02Functional::sum);
 //				.reduce(0, (x, y) -> x + y);
 				.reduce(0, Integer::sum);
